@@ -39,8 +39,8 @@ header .header-image h1{
     filter: drop-shadow(2px 2px 5px #0E0504);
 }
 header .header-image img{
-    width: 10%;
-    height: 10%;
+    width: 100px;
+    height: 70px;
     filter: drop-shadow(30px 10px 1px #0E0504);
 }
 .navbar{
@@ -70,21 +70,28 @@ header .navbar a{
 .container .coffee-splash-img img{
    width: 600px;
    animation: slideright;
-   animation-duration: 1s;
+   animation-duration: 2s;
 }
 @keyframes slideright{
-    from{transform: translateX(-100%);opacity: 0;} 
+    from{transform: translateY(100%);opacity: 0;} 
 }
 .container .div-1{
     margin-left: 5%;
 }
+.container .div-1 .intro p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .div-1 .intro h2{
+
+}
 .container .div-2{
     margin-right: 5%;
     animation: slideleft;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 @keyframes slideleft{
-    from{transform: translateX(100%);opacity: 0;} 
+    from{transform: translateY(-100%);opacity: 0;} 
 }
 .container .div-2 img{
     width: 800px;
@@ -271,16 +278,155 @@ footer{
     justify-content: space-around;
     align-items: center;
     background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
-    padding: 20px;
+    padding: 10px 20px;
 }
 footer .footer-content-2{
     margin-top: -40px;
 }
 footer .footer-content-3 a{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-decoration: none;
     color: #0E0504;
 }
+.footer-content-4{
+    margin-bottom: 30px;
+}
+
+/* Media Query */
+/* "Smartphones" Typical Screen Width (320 - 480px) */
+@media screen and (max-width: 480px) {
+    header{
+        gap: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
+        /* flex-direction: column; */
+    } 
+    .header-image{
+        display: flex;
+        justify-content: space-between;
+        margin-left: -55px;
+    }
+    header .header-image h1{
+        font-size: small;
+    }
+    header .header-image img{
+        width: 100px;
+        float: left;
+    }
+    header .navbar{
+        margin-right: -20px;
+        float: right;
+    }
+    header .navbar a{
+        font-size: smaller;
+        padding: 4px;
+        margin: 8px;
+    }
+    .container{
+        flex-direction: column;
+        margin-left: -10px;
+    }
+    .container .div-1 .intro p{
+        font-size: 25px;
+        text-align:start;
+    }
+    .container .div-1 .intro h2{
+        font-size: small;
+        text-align: justify;
+    }
+    .container .div-1 .coffee-script h1{
+        font-size: large;
+    }
+    .container .coffee-splash-img img{
+        width: 300px;
+        margin-top: -30px;
+        animation: sliderup;
+        animation-duration: 2s;
+    }
+    @keyframes sliderup {
+        from{transform: translateX(-100%);opacity: 0;} 
+    }
+    .container .div-2{
+        margin-top: -160px;
+        margin-bottom: 70px;
+    }
+    .container .div-2 img{
+        width: 450px;
+        height: 250px;
+        animation: sliderdown;
+        animation-duration: 2s;
+    }
+    @keyframes sliderdown {
+        from{transform: translateX(100%);opacity: 0;} 
+    }
+    .container-1 .card-1 {
+        padding: 40px;
+        width: 300px;
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+    .container-1 .card-1 .imgBx{
+        width: 200px;
+    }
+    .container-2 .imgCs img{
+        width: 300px;
+        margin-left: -70px;
+    }
+    .container-2 .para{
+        padding: 10px;
+        text-align: justify;
+        margin-top: 30px;
+        margin-left: -50px;
+        margin-right: -50px;
+        
+    }
+    .container-2 .para h2{
+        font-size: medium;
+        line-height: 20px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .container-3 .card-3 .imgBx{
+        width: 230px;
+    }
+    footer .footer-content-2 h2{
+        font-size: medium;
+    }
+    footer .footer-content-2 h4{
+        font-size: smaller;
+    }
+    footer .footer-content-3 h2{
+        font-size: medium;
+        margin-top: -35px;
+    }
+    footer .footer-content-3 a{
+        font-size: 10px;
+        margin-top: 3px;
+    }
+    footer .footer-content-2 img{
+        width: 15px;
+    }
+    .footer-content-4{
+        margin-left: 10px;
+    }
+    .footer-content-4 h2{
+        font-size: medium;
+    }
+    .footer-content-4 img{
+        width: 14px;
+    }
+}
+ /* "Tablets" Typical Screen Width (481 - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+ }
+ /* "Laptops" Typical Screen Width (769 - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+ 
+ } 

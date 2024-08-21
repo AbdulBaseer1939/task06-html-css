@@ -350,7 +350,7 @@ footer .footer-content-3 a{
     }
     .container .coffee-splash-img img{
         width: 250px;
-        /* margin-top: -30px; */
+        margin-top: -10px;
         /* border: 2px solid; */
         animation: sliderup;
         animation-duration: 2s;
@@ -366,11 +366,11 @@ footer .footer-content-3 a{
         width: 400px;
         height: 230px;
         margin-left: -20px;
-        padding: 10px 0px 10px 80px;
+        padding: 10px 0px 10px 100px;
         /* padding-top: 10px;
         padding-left: 80px;
         padding-right: 10px; */
-        border: 2px solid;
+        /* border: 2px solid; */
         animation: sliderdown;
         animation-duration: 2s;
     }

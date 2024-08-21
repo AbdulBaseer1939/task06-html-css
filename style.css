@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html{
     scroll-behavior: smooth;
+}
+body{
     font-style: italic;
     background-image: linear-gradient(to right bottom, #efc34a, #d59f3d, #b87d32, #995e27, #78411d, #723c1e, #6c371f, #66331f, #7b432c, #91533a, #a76448, #be7656); 
 }
@@ -16,6 +18,7 @@ span h1{
     text-align: center;
     margin-top: 100px;
     padding-bottom: 100px;
+    /* border: 2px solid; */
 }
 
 /* header */
@@ -24,8 +27,11 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
    width: 99.6%; 
-   margin-top: 10px;
    margin-bottom: 50px;
 }
 .header-image{
@@ -296,13 +302,15 @@ footer .footer-content-3 a{
 /* Media Query */
 /* "Smartphones" Typical Screen Width (320 - 480px) */
 @media screen and (max-width: 480px) {
+    body{
+        border: 4px solid;
+    }
     header{
         gap: 50px;
         position: sticky;
         top: 0;
         z-index: 1;
         background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
-        /* flex-direction: column; */
     } 
     .header-image{
         display: flex;
@@ -317,7 +325,7 @@ footer .footer-content-3 a{
         float: left;
     }
     header .navbar{
-        margin-right: -20px;
+        margin-right: -15px;
         float: right;
     }
     header .navbar a{
@@ -341,8 +349,9 @@ footer .footer-content-3 a{
         font-size: large;
     }
     .container .coffee-splash-img img{
-        width: 300px;
-        margin-top: -30px;
+        width: 250px;
+        /* margin-top: -30px; */
+        /* border: 2px solid; */
         animation: sliderup;
         animation-duration: 2s;
     }
@@ -351,29 +360,56 @@ footer .footer-content-3 a{
     }
     .container .div-2{
         margin-top: -160px;
-        margin-bottom: 70px;
+        margin-left: -15px;
     }
     .container .div-2 img{
-        width: 450px;
-        height: 250px;
+        width: 400px;
+        height: 230px;
+        margin-left: -20px;
+        padding: 10px 0px 10px 80px;
+        /* padding-top: 10px;
+        padding-left: 80px;
+        padding-right: 10px; */
+        border: 2px solid;
         animation: sliderdown;
         animation-duration: 2s;
     }
     @keyframes sliderdown {
         from{transform: translateX(100%);opacity: 0;} 
     }
+    body{
+        /* padding-left: -15px; */
+    }
+    span h1{
+        margin: 10px;
+        /* border: 2px solid; */
+        margin-top: 20px;
+    }
+    .container-1{
+        /* border: 2px solid; */
+        margin: 1px;
+    }
     .container-1 .card-1 {
         padding: 40px;
         width: 300px;
         margin-left: -100px;
         margin-right: -100px;
+        /* border: 2px solid; */
     }
     .container-1 .card-1 .imgBx{
         width: 200px;
+        
+    }
+    .container-2{
+        /* border: 2px solid; */
     }
     .container-2 .imgCs img{
         width: 300px;
         margin-left: -70px;
+        /* border: 2px solid; */
+    }
+    .container-3{
+        /* border: 2px solid; */
     }
     .container-2 .para{
         padding: 10px;
@@ -381,7 +417,7 @@ footer .footer-content-3 a{
         margin-top: 30px;
         margin-left: -50px;
         margin-right: -50px;
-        
+        /* border: 2px solid; */
     }
     .container-2 .para h2{
         font-size: medium;
@@ -391,6 +427,7 @@ footer .footer-content-3 a{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        /* border: 2px solid; */
     }
     .container-3 .card-3 .imgBx{
         width: 230px;
@@ -410,7 +447,7 @@ footer .footer-content-3 a{
         margin-top: 3px;
     }
     footer .footer-content-2 img{
-        width: 15px;
+        width: 20px;
     }
     .footer-content-4{
         margin-left: 10px;
@@ -419,11 +456,52 @@ footer .footer-content-3 a{
         font-size: medium;
     }
     .footer-content-4 img{
-        width: 14px;
+        width: 15px;
     }
 }
  /* "Tablets" Typical Screen Width (481 - 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .container .div-1 .intro h2{
+        font-size: larger;
+        text-align: justify;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+    .container .coffee-splash-img img{
+        width: 400px;
+        border: 2px solid;
+        animation: sliderdown;
+        animation-duration: 3s;
+    }
+    @keyframes sliderdown {
+        from{transform: translateX(100%);opacity: 0;} 
+    }
+    .container .div-2 img{
+        width: 600px;
+        height: 350px;
+        margin-top: -90px;
+        margin-left: 80px;
+        border: 2px solid;
+        animation: sliderup;
+        animation-duration: 3s;
+    }
+    @keyframes sliderup {
+        from{transform: translateX(-100%);opacity: 0;} 
+    }
+    .container-2 .imgCs img{
+        width: 500px;
+        margin-left: -50px;
+        /* margin-top: -60px; */
+    }
+    .container-2 .para{
+        margin-left: -40px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
 
  }
  /* "Laptops" Typical Screen Width (769 - 1024px) */

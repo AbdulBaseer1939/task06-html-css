@@ -471,11 +471,11 @@ footer .footer-content-3 a{
         width: 100%;
     }
     header .navbar{
-        margin: -15vw 0 1vw 20vw;
+        margin: -45px 0px 1px 35px;
     }
     header .navbar a{
-        margin-left: 1vw;
-        padding: 2vw;
+        margin-left: -10px;
+        padding: 3px;
         font-size: 4vw;
         
     }
@@ -517,12 +517,12 @@ footer .footer-content-3 a{
     }
     header .navbar a{
         font-size: smaller; 
-        padding: 4px; 
-        margin: 8px;
+        /* padding: 4px;  */
+        /* margin: 8px; */
     }
     .container{
         flex-direction: column;
-        margin-top: -40px;
+        margin-top: -20px;
         margin-left: -10px;
         /* border: 2px solid; */
     }

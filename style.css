@@ -474,7 +474,7 @@ footer .footer-content-3 a{
         width: 100%;
     }
     header .navbar{
-        margin: -45px 0px 0px -70px;
+        margin: -35px 0px 0px -45px;
     }
     header .navbar a{
         margin-left: 10px;
@@ -499,7 +499,7 @@ footer .footer-content-3 a{
     }
     header{
         display: flex; 
-        /* flex-direction: column;  */
+        flex-direction: column; 
         gap: 50px;
         /* border: 2px solid; */
         position: sticky;

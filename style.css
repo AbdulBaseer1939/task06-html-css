@@ -27,9 +27,9 @@ header{
    display: flex;
    justify-content: center;
    align-items: center;
-   position: sticky;
-   top: 0;
-   z-index: 1;
+   /* position: sticky; */
+   /* top: 0; */
+   /* z-index: 1; */
    background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
    width: 99.6%; 
    margin-bottom: 50px;
@@ -117,7 +117,7 @@ header .navbar a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 2px;
+    margin: 10vw 0vw 0vw 10vw;
     gap: 90px 80px;
     padding: 30px 90px;
 }
@@ -126,7 +126,7 @@ header .navbar a{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 20px;
+    margin-left: 20vw;
     width: 350px;
     height: 300px;
     background: #66331f;
@@ -199,7 +199,7 @@ header .navbar a{
     transition: 0.5s;
 }
 .container-3 .card-3:hover{
-    height: 380px;
+    height: 400px;
 }
 .container-3 .card-3 .imgBx{
     position: absolute;
@@ -300,13 +300,200 @@ footer .footer-content-3 a{
 }
 
 /* Media Query */
+/* @media (max-width: 165px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position:relative
+    }
+    header .header-image{
+        margin-left: -100px; 
+        font-size: 10vw;
+    }
+    header .header-image img{
+        height: 20vw;
+        margin: 5vw 5vw;
+    }
+    header .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+        margin-left: -10vw;
+        font-size: 5vw;
+    }
+    .container{
+        margin: -40px 0px 0px 0px;
+        padding: 0px 5px 0px 5px;
+    }
+    .container .div-1 .intro p{
+        font-size: 7vw;
+    }
+    .container .div-1 .intro h2{
+        font-size: 5vw;
+    }
+    .container .div-1 .coffee-script h1{
+        text-align: justify;
+        font-size: 7vw;
+    }
+    .container .coffee-splash-img img{
+        margin-top: 10px 0px 0px -20px;
+        width: 80vw;
+    }
+    .container .div-2 img{
+        width: 140vw;
+        height: 100vw;
+        padding: 20vw;
+    }
+    span h1{
+        margin-top: 30vw;
+        font-size: 10vw;
+    }
+    .container-1{
+        margin-top: -20vw;
+    }
+    .container-1 .card-1{
+        width: 40vw;
+        height: 80vw;
+        margin-top: 10vw;
+        margin-left: -18vw;
+        margin-right: 15vw;
+    }
+    .container-1 .card-1 .content{
+        position: absolute;
+        top: 100px;
+        padding: 10px;
+    }
+    .container-1 .card-1 .content h2{
+        font-size: 10vw;
+    }
+    .container-1 .card-1 .content h4{
+        font-size: 6vw;
+    }
+    .container-1 .card-1 .content p{
+        font-size: 6vw;
+    }
+    .container-1 .card-1 .imgBx{
+        width: 70vw;
+        height: 60vw;
+    }
+    .container-1 .card-1:hover .imgBx{
+        top: 5vw;
+        scale: 0.75;
+        box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+    }
+    .container-1 .card-1:hover{
+        height: 220vw;
+    }
+    .container-1 .card-1 .content h1{
+       position: absolute;
+       top: 30vw;
+    }
+    .container-1 .card-1:hover .content h1{
+        top: -300vw;
+        height: 200vw;
+    }
+    .container-2 .imgCs img{
+        width: 50vw;
+    }
+    .container-2 .para{
+        font-size: 3vw;
+    }
+    .container-3{
+        margin-top: -50vw;
+    }
+    .container-3 .card-3 .imgBx {
+        width: 10vw;
+        height: 10vw;
+    }
+    .container-3 .card-3{
+        width: 70vw;
+        height: 80vw;
+        margin-top: 10vw;
+        margin-left: -20vw;
+        margin-right: -20vw;
+    }
+    .container-3 .card-3 .content{
+        position: absolute;
+        top: 100px;
+        padding: 10px;
+    }
+    .container-3 .card-3 .content h2{
+        font-size: 10vw;
+    }
+    .container-3 .card-3 .content h4{
+        font-size: 6vw;
+    }
+    .container-3 .card-3 .content p{
+        font-size: 6vw;
+    }
+    .container-3 .card-3 .imgBx{
+        width: 70vw;
+        height: 60vw;
+    }
+    .container-3 .card-3:hover .imgBx{
+        top: 5vw;
+        scale: 0.75;
+        box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+    }
+    .container-3 .card-3:hover{
+        height: 250vw;
+    }
+    .container-3 .card-3 .content h1{
+       position: absolute;
+       top: 30vw;
+    }
+    .container-3 .card-3:hover .content h1{
+        top: -300vw;
+        height: 200vw;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer .footer-content-2, .footer-content-3, .footer-content-4 h2{
+        margin-top: 5vw;
+        font-size: 5vw;
+    }
+    footer .footer-content-3{
+        margin-left: -10vw;
+    }  */
+    
+/* } */
 /* "Smartphones" Typical Screen Width (320 - 480px) */
-@media screen and (max-width: 480px) {
+@media (max-width: 320px) {
+    header{
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    header .navbar{
+        margin: -15vw 0 1vw 20vw;
+    }
+    header .navbar a{
+        margin-left: 1vw;
+        padding: 2vw;
+        font-size: 4vw;
+        
+    }
+    .container-3 .card-3{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    
+}
+@media (max-width: 420px) {
     body{
-        border: 4px solid;
+        /* border: 4px solid; */
     }
     header{
+        display: flex; 
+        flex-direction: column; 
         gap: 50px;
+        /* border: 2px solid; */
         position: sticky;
         top: 0;
         z-index: 1;
@@ -329,29 +516,31 @@ footer .footer-content-3 a{
         float: right;
     }
     header .navbar a{
-        font-size: smaller;
-        padding: 4px;
+        font-size: smaller; 
+        padding: 4px; 
         margin: 8px;
     }
     .container{
         flex-direction: column;
+        margin-top: -40px;
         margin-left: -10px;
+        /* border: 2px solid; */
     }
     .container .div-1 .intro p{
-        font-size: 25px;
+        font-size: 25px; 
         text-align:start;
     }
     .container .div-1 .intro h2{
-        font-size: small;
+        font-size: small; 
         text-align: justify;
     }
     .container .div-1 .coffee-script h1{
-        font-size: large;
+        font-size: medium; 
     }
     .container .coffee-splash-img img{
-        width: 250px;
-        margin-top: -10px;
-        /* border: 2px solid; */
+         width: 220px; 
+         /* border:2px solid; */
+         margin-top: -10px; 
         animation: sliderup;
         animation-duration: 2s;
     }
@@ -363,14 +552,11 @@ footer .footer-content-3 a{
         margin-left: -15px;
     }
     .container .div-2 img{
-        width: 400px;
-        height: 230px;
-        margin-left: -20px;
-        padding: 10px 0px 10px 100px;
-        /* padding-top: 10px;
-        padding-left: 80px;
-        padding-right: 10px; */
-        /* border: 2px solid; */
+        width: 350px; 
+        height: 180px;
+        margin: 100px 0px 0px -20px;
+        padding: 30px 10px 0px 100px;
+         /* border: 2px solid; */
         animation: sliderdown;
         animation-duration: 2s;
     }
@@ -390,38 +576,40 @@ footer .footer-content-3 a{
         margin: 1px;
     }
     .container-1 .card-1 {
-        padding: 40px;
-        width: 300px;
-        margin-left: -100px;
-        margin-right: -100px;
+        /* padding: 60px; */
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 300px; 
+        margin-left: -80px;
+        margin-right: -80px;  
         /* border: 2px solid; */
+    
     }
     .container-1 .card-1 .imgBx{
-        width: 200px;
-        
-    }
-    .container-2{
+        width: 220px;
         /* border: 2px solid; */
     }
+    
     .container-2 .imgCs img{
         width: 300px;
-        margin-left: -70px;
+        margin-left: -100px;
         /* border: 2px solid; */
     }
-    .container-3{
-        /* border: 2px solid; */
-    }
+    
     .container-2 .para{
         padding: 10px;
         text-align: justify;
         margin-top: 30px;
         margin-left: -50px;
-        margin-right: -50px;
+        margin-right: -60px;
         /* border: 2px solid; */
     }
     .container-2 .para h2{
-        font-size: medium;
-        line-height: 20px;
+        font-size: small;
+        line-height: 15px;
+    }
+    .container-3 .card-3 .content p{
+        font-size: small;
     }
     .container-3 .card-3 .content h3{
         font-size: medium;
@@ -430,19 +618,22 @@ footer .footer-content-3 a{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        /* border: 2px solid; */
+        /* margin-top: 10px; */
+        border: 2px solid;
     }
     .container-3 .card-3 .imgBx{
-        width: 230px;
+        width: 200px;
+        height: 190px;
     }
     footer .footer-content-2 h2{
-        font-size: medium;
+        font-size: small;
+
     }
     footer .footer-content-2 h4{
         font-size: smaller;
     }
     footer .footer-content-3 h2{
-        font-size: medium;
+        font-size: small;
         margin-top: -35px;
     }
     footer .footer-content-3 a{
@@ -456,7 +647,7 @@ footer .footer-content-3 a{
         margin-left: 10px;
     }
     .footer-content-4 h2{
-        font-size: medium;
+        font-size: small;
     }
     .footer-content-4 img{
         width: 15px;

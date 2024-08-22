@@ -423,6 +423,9 @@ footer .footer-content-3 a{
         font-size: medium;
         line-height: 20px;
     }
+    .container-3 .card-3 .content h3{
+        font-size: medium;
+    }
     footer{
         display: flex;
         justify-content: space-evenly;

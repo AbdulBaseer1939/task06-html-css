@@ -70,7 +70,6 @@ header .navbar a{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    /* margin: 10px; */
 }
 .container .coffee-splash-img img{
    width: 60%;
@@ -118,9 +117,9 @@ header .navbar a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5% 9%;
+    margin: 5% 10%;
     gap: 90px 90px;
-    padding: 30px 40px;
+    padding: 30px 60px;
 }
 .container-1 .card-1{
     position: relative;
@@ -128,10 +127,10 @@ header .navbar a{
     justify-content: center;
     align-items: flex-start;
     margin-left: 25px;
-    width: 280px;
+    width: 300px;
     height: 300px;
     background: #66331f;
-    border-radius: 20%;
+    border-radius: 10%;
     box-shadow: 4px 5px 10px;
     transition: 0.5s;
 }
@@ -245,13 +244,10 @@ header .navbar a{
 .container-2{
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
-    /* gap: 20px; */
     padding: 80px 90px;
-    /* margin: 20px; */
 }
 .container-2 .imgCs{
     width: 80%;
@@ -270,8 +266,6 @@ header .navbar a{
   width: 100%;
   text-align: center;
   line-height: 3rem;
-  /* margin-left: 40%;
-  margin-right: 20%; */
   border-radius: 5%;
   box-shadow: 4px 5px 10px;
   color: #0E0504;
@@ -354,7 +348,6 @@ footer .footer-content-3 a{
     }
     header .header-image img{
         width: 30%; 
-        /* margin-left: 20px; */
     }
     header .navbar a{
         font-size: smaller; 
@@ -406,13 +399,11 @@ footer .footer-content-3 a{
     }
     .container-1 .card-1 {
         padding: 0px 60px;
-        margin-left: -70px;
-        margin-right: -70px;
+        margin: 0px -70;
     }
     .container-1 .card-1 .imgBx{
         width: 70%;
     }
-    
     .container-2 .para{
         padding: 10px;
         text-align: justify;
@@ -520,7 +511,6 @@ footer .footer-content-3 a{
     .container-2 .imgCs img{
         width: 90%;
         margin-left: -50px;
-        /* margin-top: -60px; */
     }
     .container-2 .para{
         margin: 20px -10% 0px -1%;
@@ -530,34 +520,97 @@ footer .footer-content-3 a{
  /* "Laptops" Typical Screen Width (769 - 1024px) */
 
 @media screen and (max-width: 885px) {
- .container{
-    flex-direction: column;
-    /* margin-left: -20px; */
- }
- .container .coffee-splash-img img{
-    margin-top: -10px; 
-    animation: sliderup;
-    animation-duration: 2s;
+    .container{
+        flex-direction: column;
+    }
+    .container .coffee-splash-img img{
+        width: 50%;
+        margin-top: -10px; 
+        animation: sliderup;
+        animation-duration: 2s;
+    }
+    @keyframes sliderup {
+        from{transform: translateX(-100%);opacity: 0;} 
+    }
+    .container .div-2{
+        margin: -50px 10px 0px -60px;
+    }
+    .container .div-2 img{
+        width: 70%; 
+        margin: -30px 0px 0px 150px;
+        padding: 0px 0px 30px 90px;
+        animation: sliderdown;
+        animation-duration: 2s;
+    }
+    @keyframes sliderdown {
+        from{transform: translateX(100%);opacity: 0;} 
+    }
+    .container-2{
+        flex-direction: column;
+    }
 }
-@keyframes sliderup {
-    from{transform: translateX(-100%);opacity: 0;} 
+
+@media screen and (min-width: 1000px){
+    .container-1{
+        width: 100%;
+    }
+    .container-1 .card-1{
+        width: 260px;
+        margin-left: -70px;
+        font-size: small;
+    }
+    .container-3{
+        width: 100%;
+    }
+    .container-3 .card-3{
+        margin-left: -44px;
+        width: 230px;
+        font-size: small;
+    }
+    .container-3 .card-3 .imgBx{
+        width:200px;
+    }
 }
-.container .div-2{
-    margin: -50px 10px 0px -60px;
+    
+@media screen and (min-width: 1200px) {
+    .container-1{
+        width: 100%;
+        margin-left: -20px;
+    }
+    .container-1 .card-1{
+        margin-left: -20px;
+    }
+    .container-3{
+        margin-left: -10px;
+        width: 100%;
+    }
+    .container-3 .card-3{
+        font-size: small;
+        width: 240px;
+        margin-left: -10px;
+    }
+    .container-3 .card-3 .imgBx{
+        width: 200px;
+    }
 }
-.container .div-2 img{
-    width: 70%; 
-    /* height: 50%; */
-    margin: -30px 0px 0px 150px;
-    padding: 0px 0px 30px 90px;
-    animation: sliderdown;
-    animation-duration: 2s;
+
+@media screen and (min-width: 1440px){
+    .container-1{
+        width: 100%;
+    }
+    .container-1 .card-1{
+        margin-left: 80px;
+        width: 300px;
+        font-size: large;
+    }
+    .container-3{
+        margin-left: -10px;
+    }
+    .container-3 .card-3{
+        width: 300px;
+        font-size: medium;
+    }
 }
-@keyframes sliderdown {
-    from{transform: translateX(100%);opacity: 0;} 
-}
-.container-2{
-    flex-direction: column;
-}
-}
+    
+
 

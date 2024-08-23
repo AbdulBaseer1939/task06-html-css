@@ -18,15 +18,12 @@ span h1{
     text-align: center;
     margin-top: 100px;
     padding-bottom: 100px;
-    /* border: 2px solid; */
 }
 
 /* header */
 
 header{
    display: flex;
-   justify-content: center;
-   align-items: center;
    position: sticky; 
    top: 0;  
    z-index: 1; 
@@ -36,7 +33,7 @@ header{
 }
 .header-image{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
@@ -46,17 +43,18 @@ header .header-image h1{
     filter: drop-shadow(2px 2px 5px #0E0504);
 }
 header .header-image img{
-    width: 40%;
+    width: 10%;
     filter: drop-shadow(30px 10px 1px #0E0504);
 }
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
 }
 header .navbar a{
     display: flex;
+    margin-right: 2%;
     padding: 1%;
     font-size: 90%;
     text-decoration: none;
@@ -300,14 +298,17 @@ footer .footer-content-3 a{
 
 /* "Smartphones" Typical Screen Width (320 - 480px) */
  
-@media screen and (max-width: 360px){
+@media screen and (max-width: 320px){
     
     header{
         flex-direction: column;
         width: 100%;
     }
-    .header-image{
-        width: 50%;
+    .header-image img{
+        width: 10%;
+    }
+    .header-image img{
+        width: 20%;
     }
     header .navbar{
         margin: -5px 0px 0px -5px;
@@ -331,35 +332,24 @@ footer .footer-content-3 a{
 }
 
 @media screen and (max-width: 480px) {
-    
-    header{
-        width: 100%;
-        display: flex; 
-        /* position: sticky;
-        top: 0;  */
-     z-index: 1;
-     background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
-    } 
-    .header-image{
-        display: flex;
-        justify-content: space-between;
-        width:50%;
 
+    .header-image{
+        width:60%;
     }
     header .header-image h1{
         font-size: x-small;
     }
     header .header-image img{
-        width: 50%; 
-        margin-left: 20px;
+        width: 30%; 
+        /* margin-left: 20px; */
     }
     header .navbar{
-        width: 100%;
+        /* width: 100%; */
     }
     header .navbar a{
         font-size: smaller; 
         padding: 4px; 
-        margin: 8px;
+        margin: 9px 2px;
     }
     .container{
         flex-direction: column;
@@ -375,7 +365,8 @@ footer .footer-content-3 a{
         text-align: justify;
     }
     .container .div-1 .coffee-script h1{
-        font-size: medium; 
+        text-align: center;
+        font-size: larger; 
     }
     .container .coffee-splash-img img{
         width: 220px; 
@@ -490,7 +481,6 @@ footer .footer-content-3 a{
     }
     .container .coffee-splash-img img{
         /* width: 70%; */
-        border: 2px solid;
         animation: sliderdown;
         animation-duration: 3s;
     }
@@ -501,7 +491,6 @@ footer .footer-content-3 a{
         width: 85%;
         margin-top: -10%;
         margin-left: 15%;
-        border: 2px solid;
         animation: sliderup;
         animation-duration: 3s;
     }

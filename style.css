@@ -29,6 +29,7 @@ header{
    z-index: 1; 
    background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
    width: 100%;
+   padding: 10px 0px;
    margin-bottom: 30px;
 }
 .header-image{
@@ -44,7 +45,7 @@ header .header-image h1{
 }
 header .header-image img{
     width: 10%;
-    filter: drop-shadow(30px 10px 1px #0E0504);
+    filter: drop-shadow(20px 10px 1px #0E0504);
 }
 .navbar{
     display: flex;
@@ -69,10 +70,10 @@ header .navbar a{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 .container .coffee-splash-img img{
-   width: 600px;
+   width: 60%;
    animation: slideright;
    animation-duration: 2s;
 }
@@ -80,13 +81,19 @@ header .navbar a{
     from{transform: translateY(100%);opacity: 0;} 
 }
 .container .div-1{
+    width: 95%;
     margin-left: 5%;
 }
+.container .div-1 .intro h2{
+    text-align: justify;
+    font-size: large;
+}
 .container .div-1 .intro p{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 .container .div-2{
+    width: 100%;
     margin-right: 5%;
     animation: slideleft;
     animation-duration: 2s;
@@ -95,9 +102,8 @@ header .navbar a{
     from{transform: translateY(-100%);opacity: 0;} 
 }
 .container .div-2 img{
-    width: 800px;
-    height: 450px;
-    margin-top: 100px;
+    width: 100%;
+    margin: 130px 0px 0px -10px;
     padding-right: 50px;
 }
 .auto-type{
@@ -112,20 +118,20 @@ header .navbar a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5% 5px;
-    gap: 90px 80px;
-    padding: 30px 90px;
+    margin: 5% 9%;
+    gap: 90px 90px;
+    padding: 30px 40px;
 }
 .container-1 .card-1{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 20px;
-    width: 350px;
+    margin-left: 25px;
+    width: 280px;
     height: 300px;
     background: #66331f;
-    border-radius: 20px;
+    border-radius: 20%;
     box-shadow: 4px 5px 10px;
     transition: 0.5s;
 }
@@ -135,8 +141,8 @@ header .navbar a{
 .container-1 .card-1 .imgBx{
     position: absolute;
     top: 10px;
-    width: 300px;
-    height: 220px;
+    width: 200px;
+    height: 210px;
     overflow: hidden;
     background: #91533a;
     border-radius: 12px;
@@ -237,36 +243,41 @@ header .navbar a{
 /* conatiner-3 */
 
 .container-2{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
-    gap: 20px;
+    /* gap: 20px; */
     padding: 80px 90px;
-    margin: 20px;
+    /* margin: 20px; */
+}
+.container-2 .imgCs{
+    width: 80%;
 }
 .container-2 .imgCs img{
-    width: 700px;
+    width: 80%;
     filter: drop-shadow(2px 2px 40px #0E0504);
     animation: slide-right;
     animation-timeline: view();
-    animation-range:0px 800px;
+    animation-range:0px 500px;
 }
 @keyframes slide-right{
     from{opacity: 0;transform: translateX(-50%);}
 }
 .container-2 .para{
+  width: 100%;
   text-align: center;
   line-height: 3rem;
-  margin-left: 40%;
-  margin-right: 20%;
-  border-radius: 10px;
+  /* margin-left: 40%;
+  margin-right: 20%; */
+  border-radius: 5%;
   box-shadow: 4px 5px 10px;
   color: #0E0504;
   animation: slide-left;
   animation-timeline: view();
-  animation-range:0px 700px;
+  animation-range:0px 500px;
 }
 @keyframes slide-left{
     from{opacity: 0;transform: translateX(50%);}
@@ -298,20 +309,22 @@ footer .footer-content-3 a{
 
 /* "Smartphones" Typical Screen Width (320 - 480px) */
  
-@media screen and (max-width: 320px){
+@media screen and (max-width: 339px){
     
     header{
-        flex-direction: column;
         width: 100%;
-    }
-    .header-image img{
-        width: 10%;
-    }
-    .header-image img{
-        width: 20%;
     }
     header .navbar{
         margin: -5px 0px 0px -5px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .div-1 .intro p{
+        font-size: medium;
+    }
+    .container .div-1 .intro h2{
+        font-size: small;
     }
     span h1{
         font-size: x-large;
@@ -343,12 +356,9 @@ footer .footer-content-3 a{
         width: 30%; 
         /* margin-left: 20px; */
     }
-    header .navbar{
-        /* width: 100%; */
-    }
     header .navbar a{
         font-size: smaller; 
-        padding: 4px; 
+        padding: 2px; 
         margin: 9px 2px;
     }
     .container{
@@ -360,13 +370,13 @@ footer .footer-content-3 a{
         font-size: 25px; 
         text-align:start;
     }
-    .container .div-1 .intro h2{
-        font-size: small; 
+    .container .div-1 .intro h3{
+        font-size: 15px; 
         text-align: justify;
     }
     .container .div-1 .coffee-script h1{
         text-align: center;
-        font-size: larger; 
+        font-size: large;
     }
     .container .coffee-splash-img img{
         width: 220px; 
@@ -378,13 +388,9 @@ footer .footer-content-3 a{
         from{transform: translateX(-100%);opacity: 0;} 
     }
     .container .div-2{
-        margin: -50px 10px 0px -60px;
+        margin: -50px 10px 0px -90px;
     }
-    .container .div-2 img{
-        width: 100%; 
-        height: 50%;
-        margin: 20px;
-        padding: 0px 0px 30px 90px;
+    .container .div-2 img{ 
         animation: sliderdown;
         animation-duration: 2s;
     }
@@ -407,20 +413,12 @@ footer .footer-content-3 a{
         width: 70%;
     }
     
-    .container-2 .imgCs img{
-        width: 300px;
-        margin-left: -100px;
-    }
-    
     .container-2 .para{
         padding: 10px;
         text-align: justify;
-        margin-top: 30px;
-        margin-left: -50px;
-        margin-right: -60px;
     }
     .container-2 .para h2{
-        font-size: small;
+        font-size: smaller;
         line-height: 15px;
     }
     .container-3 .card-3 .content p{
@@ -470,7 +468,7 @@ footer .footer-content-3 a{
 
 @media screen and (max-width: 768px) {
     .container .div-1 .intro h2{
-        font-size: larger;
+        font-size: medium;
         text-align: justify;
     }
     .container{
@@ -480,7 +478,6 @@ footer .footer-content-3 a{
         margin-right: 20px;
     }
     .container .coffee-splash-img img{
-        /* width: 70%; */
         animation: sliderdown;
         animation-duration: 3s;
     }
@@ -494,8 +491,31 @@ footer .footer-content-3 a{
         animation: sliderup;
         animation-duration: 3s;
     }
+    .container .coffee-splash-img img{
+        width: 70%; 
+        margin-top: -10px; 
+        animation: sliderup;
+        animation-duration: 2s;
+    }
     @keyframes sliderup {
         from{transform: translateX(-100%);opacity: 0;} 
+    }
+    .container .div-2{
+        margin: -50px 10px 0px -60px;
+    }
+    .container .div-2 img{
+        width: 90%; 
+        height: 50%;
+        margin: -40px 0px 0px 30px;
+        padding: 0px 0px 30px 90px;
+        animation: sliderdown;
+        animation-duration: 2s;
+    }
+    @keyframes sliderdown {
+        from{transform: translateX(100%);opacity: 0;} 
+    }
+    .container-2{
+        flex-direction: column;
     }
     .container-2 .imgCs img{
         width: 90%;
@@ -503,12 +523,41 @@ footer .footer-content-3 a{
         /* margin-top: -60px; */
     }
     .container-2 .para{
-        margin: 30px -10% 0px -1%;
+        margin: 20px -10% 0px -1%;
     }
- }
+}
  
  /* "Laptops" Typical Screen Width (769 - 1024px) */
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
- 
+@media screen and (max-width: 885px) {
+ .container{
+    flex-direction: column;
+    /* margin-left: -20px; */
  }
+ .container .coffee-splash-img img{
+    margin-top: -10px; 
+    animation: sliderup;
+    animation-duration: 2s;
+}
+@keyframes sliderup {
+    from{transform: translateX(-100%);opacity: 0;} 
+}
+.container .div-2{
+    margin: -50px 10px 0px -60px;
+}
+.container .div-2 img{
+    width: 70%; 
+    /* height: 50%; */
+    margin: -30px 0px 0px 150px;
+    padding: 0px 0px 30px 90px;
+    animation: sliderdown;
+    animation-duration: 2s;
+}
+@keyframes sliderdown {
+    from{transform: translateX(100%);opacity: 0;} 
+}
+.container-2{
+    flex-direction: column;
+}
+}
+

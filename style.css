@@ -24,9 +24,9 @@ span h1{
 
 header{
    display: flex;
-   position: sticky; 
-   top: 0;  
-   z-index: 1; 
+   position: fixed; 
+   top: 1px;  
+   z-index: 100; 
    background-image: linear-gradient(to left top, #794028, #703a23, #67331e, #5f2d1a, #562715, #5b2b18, #612f1c, #66331f, #7b432c, #91533a, #a76448, #be7656);
    width: 100%;
    padding: 10px 0px;
@@ -301,7 +301,7 @@ footer .footer-content-3 a{
 
 /* Media Query */
 
-/* kota: "Smartphones" Typical Screen Width (320 - 480px) */
+/* "Smartphones" Typical Screen Width (320 - 480px) */
  
 @media screen and (max-width: 339px){
     
